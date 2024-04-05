@@ -1,20 +1,21 @@
 package com.example.fooddeliveryerd.service.news;
 
-import com.example.fooddeliveryerd.model.News;
+import com.example.fooddeliveryerd.model.dto.request.NewsRequestDto;
+import com.example.fooddeliveryerd.model.dto.response.NewsResponseDto;
 
 public class NewsServiceImpl implements INewsService {
     @Override
-    public Iterable<News> listAll() {
+    public Iterable<NewsResponseDto> listAll() {
         return null;
     }
 
     @Override
-    public News getById(long id) {
+    public NewsResponseDto getById(long id) {
         return null;
     }
 
     @Override
-    public News save(News news) {
+    public NewsResponseDto save(NewsRequestDto newsRequestDto) {
         return null;
     }
 

@@ -1,20 +1,21 @@
 package com.example.fooddeliveryerd.service.cartItem;
 
-import com.example.fooddeliveryerd.model.CartItem;
+import com.example.fooddeliveryerd.model.dto.request.CartItemRequestDto;
+import com.example.fooddeliveryerd.model.dto.response.CartItemResponseDto;
 
 public class CartItemServiceImpl implements ICartItemService {
     @Override
-    public Iterable<CartItem> listAll() {
+    public Iterable<CartItemResponseDto> listAll() {
         return null;
     }
 
     @Override
-    public CartItem getById(long id) {
+    public CartItemResponseDto getById(long id) {
         return null;
     }
 
     @Override
-    public CartItem save(CartItem cartItem) {
+    public CartItemResponseDto save(CartItemRequestDto cartItem) {
         return null;
     }
 

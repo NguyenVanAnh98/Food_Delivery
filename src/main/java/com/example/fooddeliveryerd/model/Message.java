@@ -20,11 +20,9 @@ public class Message {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String uuid;
-//    private int senderId;
     @ManyToOne
     @JoinColumn(name="sender_id", nullable=false)
     private User sender;
-//    private int receiverId;
     @ManyToOne
     @JoinColumn(name="receiver_id", nullable=false)
     private User receiver;

@@ -1,11 +1,11 @@
 package com.example.fooddeliveryerd.service;
 
-public interface IGeneralService<T> {
+public interface IGeneralService<T, S> {
     Iterable<T> listAll();
 
     T getById(long id);
 
-    T save(T t);
+    T save(S s);
 
     void delete(long id);
 }

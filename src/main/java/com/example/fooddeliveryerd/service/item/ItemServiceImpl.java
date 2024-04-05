@@ -1,20 +1,21 @@
 package com.example.fooddeliveryerd.service.item;
 
-import com.example.fooddeliveryerd.model.Item;
+import com.example.fooddeliveryerd.model.dto.request.ItemRequestDto;
+import com.example.fooddeliveryerd.model.dto.response.ItemResponseDto;
 
 public class ItemServiceImpl implements IItemService {
     @Override
-    public Iterable<Item> listAll() {
+    public Iterable<ItemResponseDto> listAll() {
         return null;
     }
 
     @Override
-    public Item getById(long id) {
+    public ItemResponseDto getById(long id) {
         return null;
     }
 
     @Override
-    public Item save(Item item) {
+    public ItemResponseDto save(ItemRequestDto itemRequestDto) {
         return null;
     }
 

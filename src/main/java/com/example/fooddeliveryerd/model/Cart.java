@@ -19,17 +19,13 @@ public class Cart {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String uuid;
-//    private int userId;
     @ManyToOne
     @JoinColumn(name="user_id", nullable=false)
     private User user;
-
-//    private int restaurentId;
     @ManyToOne
-    @JoinColumn(name="restaurent_id", nullable=false)
-    private Restaurent restaurent;
+    @JoinColumn(name="restaurant_id", nullable=false)
+    private Restaurant restaurant;
 
-//    private int orderDiscountId;
     @ManyToOne
     @JoinColumn(name="order_discount_id", nullable=false)
     private OrderDiscount orderDiscount;
@@ -39,6 +35,5 @@ public class Cart {
     private float rebateAmount;
     private Timestamp cartDate;
 
-
-    }
+}
 
