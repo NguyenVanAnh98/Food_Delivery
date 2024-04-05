@@ -21,6 +21,6 @@ public class RestaurantServiceImpl implements IRestaurantService {
 
     @Override
     public void delete(long id) {
-
+        // viet them ham xoa
     }
 }
