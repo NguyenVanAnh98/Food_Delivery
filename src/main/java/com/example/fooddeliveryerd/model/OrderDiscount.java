@@ -20,17 +20,16 @@ public class OrderDiscount {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String uuid;
-//    private int restaurent_id;
     @ManyToOne
-    @JoinColumn(name="restaurent_id", nullable=false)
-    private Restaurent restaurent;
+    @JoinColumn(name="restaurant_id", nullable=false)
+    private Restaurant restaurant;
 
-    private float max_amount;
-    private float min_amount;
-    private float discount_rate;
-    private Timestamp start_date;
-    private Timestamp end_date;
-    private Timestamp created_date;
+    private float maxAmount;
+    private float minAmount;
+    private float discountRate;
+    private Timestamp startDate;
+    private Timestamp endDate;
+    private Timestamp createdDate;
 
 }
 

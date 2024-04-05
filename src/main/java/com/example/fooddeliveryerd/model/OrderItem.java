@@ -18,12 +18,9 @@ public class OrderItem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String uuid;
-//    private int orderId;
     @ManyToOne
     @JoinColumn(name="order_id", nullable=false)
     private Order order;
-
-//    private int itemId;
     @ManyToOne
     @JoinColumn(name="item_id", nullable=false)
     private Item item;

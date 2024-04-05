@@ -17,12 +17,10 @@ public class CartItem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
    private String uuid;
-//   private int itemId;
     @ManyToOne
     @JoinColumn(name="item_id", nullable=false)
     private Item item;
 
-//   private int cartId;
     @ManyToOne
     @JoinColumn(name="cart_id", nullable=false)
     private Cart cart;

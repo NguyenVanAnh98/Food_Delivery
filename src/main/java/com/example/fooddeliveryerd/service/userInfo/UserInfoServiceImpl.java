@@ -1,20 +1,21 @@
 package com.example.fooddeliveryerd.service.userInfo;
 
-import com.example.fooddeliveryerd.model.UserInfo;
+import com.example.fooddeliveryerd.model.dto.request.UserInfoRequestDto;
+import com.example.fooddeliveryerd.model.dto.response.UserInfoResponseDto;
 
 public class UserInfoServiceImpl implements IUserInfoService {
     @Override
-    public Iterable<UserInfo> listAll() {
+    public Iterable<UserInfoResponseDto> listAll() {
         return null;
     }
 
     @Override
-    public UserInfo getById(long id) {
+    public UserInfoResponseDto getById(long id) {
         return null;
     }
 
     @Override
-    public UserInfo save(UserInfo userInfo) {
+    public UserInfoResponseDto save(UserInfoRequestDto userInfoRequestDto) {
         return null;
     }
 

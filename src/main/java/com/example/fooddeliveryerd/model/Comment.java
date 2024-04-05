@@ -20,18 +20,15 @@ public class Comment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String uuid;
-//    private int restaurentId;
     @ManyToOne
-    @JoinColumn(name="restaurent_id", nullable=false)
-    private Restaurent restaurent;
+    @JoinColumn(name="restaurant_id", nullable=false)
+    private Restaurant restaurant;
 
-
-//   private int userId;
     @ManyToOne
     @JoinColumn(name="user_id", nullable=false)
     private User user;
 
-   private String content;
-   private Timestamp postDate;
-   private boolean deleted;
+    private String content;
+    private Timestamp postDate;
+    private boolean deleted;
 }

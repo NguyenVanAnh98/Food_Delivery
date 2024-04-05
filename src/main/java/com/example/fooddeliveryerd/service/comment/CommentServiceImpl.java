@@ -1,20 +1,21 @@
 package com.example.fooddeliveryerd.service.comment;
 
-import com.example.fooddeliveryerd.model.Comment;
+import com.example.fooddeliveryerd.model.dto.request.CommentRequestDto;
+import com.example.fooddeliveryerd.model.dto.response.CommentResponseDto;
 
 public class CommentServiceImpl implements ICommentService {
     @Override
-    public Iterable<Comment> listAll() {
+    public Iterable<CommentResponseDto> listAll() {
         return null;
     }
 
     @Override
-    public Comment getById(long id) {
+    public CommentResponseDto getById(long id) {
         return null;
     }
 
     @Override
-    public Comment save(Comment comment) {
+    public CommentResponseDto save(CommentRequestDto commentRequestDto) {
         return null;
     }
 
