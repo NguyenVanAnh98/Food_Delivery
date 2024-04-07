@@ -1,13 +1,13 @@
 package com.example.fooddeliveryerd.model.enumration;
 
-public enum EMealFlavor {
+public enum EMealState {
 
-    VEG("VEG"),
-    NONVEG("NONVEG");
+    FOOD("FOOD"),
+    DRINK("DRINK");
 
     private final String value;
 
-    EMealFlavor(String value) {
+    EMealState(String value) {
         this.value = value;
     }
 
@@ -15,10 +15,10 @@ public enum EMealFlavor {
         return value;
     }
 
-    public static EMealFlavor fromValue(String value) {
-        for (EMealFlavor eMealFlavor : values()) {
-            if (eMealFlavor.value.equalsIgnoreCase(value)) {
-                return eMealFlavor;
+    public static EMealState fromValue(String value) {
+        for (EMealState eMealState : values()) {
+            if (eMealState.value.equalsIgnoreCase(value)) {
+                return eMealState;
             }
         }
         throw new IllegalArgumentException("Không tồn tại giá trị: " + value);

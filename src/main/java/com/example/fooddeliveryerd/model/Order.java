@@ -1,5 +1,7 @@
 package com.example.fooddeliveryerd.model;
 
+import com.example.fooddeliveryerd.model.enumration.EOrderStatus;
+import com.example.fooddeliveryerd.model.enumration.EPaidBy;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -36,6 +38,6 @@ public class Order {
     private float rebateAmount;
     private float totalAmount;
     private Timestamp orderDate;
-
-
+    private EOrderStatus eOrderStatus;
+    private EPaidBy ePaidBy;
 }

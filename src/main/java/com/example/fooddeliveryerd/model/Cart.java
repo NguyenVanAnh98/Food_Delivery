@@ -1,5 +1,6 @@
 package com.example.fooddeliveryerd.model;
 
+import com.example.fooddeliveryerd.model.enumration.ECartStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -34,6 +35,6 @@ public class Cart {
     private float totalAmount;
     private float rebateAmount;
     private Timestamp cartDate;
-
+    private ECartStatus cartStatus;
 }
 

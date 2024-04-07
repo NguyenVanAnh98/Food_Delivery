@@ -9,7 +9,7 @@ import lombok.Setter;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name = "star_restaurents")
+@Table(name = "star_restaurants")
 @Getter
 @Setter
 @AllArgsConstructor

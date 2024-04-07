@@ -1,5 +1,6 @@
 package com.example.fooddeliveryerd.model;
 
+import com.example.fooddeliveryerd.model.enumration.ECurrentStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -25,4 +26,5 @@ public class Restaurant {
     private String profileImg;
     private Time openingTime;
     private Time closingTime;
+    private ECurrentStatus eCurrentStatus;
 }

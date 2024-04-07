@@ -1,5 +1,7 @@
 package com.example.fooddeliveryerd.model;
 
+import com.example.fooddeliveryerd.model.enumration.ERole;
+import com.example.fooddeliveryerd.model.enumration.EUserType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -28,5 +30,9 @@ public class User {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "userInfo_id", referencedColumnName = "id")
     private UserInfo userInfo;
+
+    private EUserType userType;
+    private ERole eRole;
+    private boolean currentStatus;
 }
 
